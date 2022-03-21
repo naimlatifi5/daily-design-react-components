@@ -1,5 +1,5 @@
 import React from 'react'
-import Button from '../components/common/Button.tsx'
+import Button from '../components/common/Button'
 export default function Home() {
   const handleClick = () => {
     console.log('clicked')

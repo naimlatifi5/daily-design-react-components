@@ -1,11 +1,11 @@
 import React, { MouseEventHandler } from 'react'
 
-type Props = {
+type myProps = {
   onClick: MouseEventHandler
   text: string
 }
 
-const Button = ({ onClick, text }: Props) => (
+const Button = ({ onClick, text }: myProps) => (
   <button onClick={onClick}>{text}</button>
 )
 export default Button

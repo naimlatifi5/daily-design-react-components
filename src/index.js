@@ -1,8 +1,7 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
-import './index.css'
+import GlobalStyles from './styles/global.ts'
 
-import reportWebVitals from './reportWebVitals'
 import { BrowserRouter, Route, Routes } from 'react-router-dom'
 
 import NavBar from './components/common/NavBar'
@@ -14,6 +13,7 @@ import Notfound from './pages/NotFound.tsx'
 ReactDOM.render(
   <React.StrictMode>
     <div className="App">
+      <GlobalStyles />
       <BrowserRouter>
         <header>
           <NavBar />
@@ -34,4 +34,3 @@ ReactDOM.render(
 // If you want to start measuring performance in your app, pass a function
 // to log results (for example: reportWebVitals(console.log))
 // or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals()
