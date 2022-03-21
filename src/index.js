@@ -7,9 +7,9 @@ import { BrowserRouter, Route, Routes } from 'react-router-dom'
 
 import NavBar from './components/common/NavBar'
 // pages
-import Home from './pages/Home.js'
-import About from './pages/About.js'
-import Notfound from './pages/NotFound'
+import Home from './pages/Home.tsx'
+import About from './pages/About.tsx'
+import Notfound from './pages/NotFound.tsx'
 
 ReactDOM.render(
   <React.StrictMode>
