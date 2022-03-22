@@ -10,7 +10,9 @@ const GlobalStyles = createGlobalStyle`
     body {
         background-color: #EAE4D0;
     }
-    
+    .App {
+        padding: 12px 48px;
+    }
     #root{
         margin:0 auto;
         
