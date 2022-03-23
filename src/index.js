@@ -6,6 +6,7 @@ import { BrowserRouter, Route, Routes } from 'react-router-dom'
 import GlobalStyles from './styles/global.ts'
 import { ThemeProvider } from 'styled-components'
 import { COLORS } from './styles/colors.ts'
+
 // components
 import NavBar from './components/common/NavBar'
 // pages

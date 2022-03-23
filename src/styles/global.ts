@@ -1,6 +1,6 @@
 import { createGlobalStyle } from 'styled-components'
 const GlobalStyles = createGlobalStyle`
-    *{
+    * {
         margin: 0;
         padding: 0;
         outline:0;
@@ -11,7 +11,10 @@ const GlobalStyles = createGlobalStyle`
         background-color: #EAE4D0;
     }
     .App {
-        padding: 12px 48px;
+        padding: 12px;
+        @media (min-width: 1024px) {
+            padding: 12px 48px;
+        }
     }
     #root{
         margin:0 auto;
