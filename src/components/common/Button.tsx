@@ -2,7 +2,7 @@ import React, { MouseEventHandler } from 'react'
 
 type myProps = {
   onClick: MouseEventHandler
-  text: string
+  text?: string
 }
 
 const Button = ({ onClick, text }: myProps) => (

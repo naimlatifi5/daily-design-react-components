@@ -1,4 +1,5 @@
 import React, { MouseEventHandler } from 'react'
+import NotificationToolTip from './NotificationToolTip'
 import styled from 'styled-components'
 import { device } from '../../styles/devices'
 type buttonProps = {
@@ -9,6 +10,7 @@ const ColumnWrapper = styled.div`
   flex-basis: 50%;
   max-width: 50%;
   padding: 0 0.5rem 1rem;
+  position: relative;
   @media ${device.lg} {
     flex-basis: 25%;
     max-width: 25%;
@@ -27,6 +29,7 @@ const CategoryButtonStyle = styled.button`
   opacity: 0.7;
   border: none;
   min-height: 230px;
+  cursor: pointer;
 `
 const CategoryButton = ({ onClick, text }: buttonProps) => {
   return (
@@ -34,6 +37,7 @@ const CategoryButton = ({ onClick, text }: buttonProps) => {
       <CategoryButtonStyle type="button" onClick={onClick}>
         {text}
       </CategoryButtonStyle>
+      <NotificationToolTip color="white" value={3} />
     </ColumnWrapper>
   )
 }
