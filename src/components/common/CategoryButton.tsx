@@ -2,9 +2,12 @@ import React, { MouseEventHandler } from 'react'
 import NotificationToolTip from './NotificationToolTip'
 import styled from 'styled-components'
 import { device } from '../../styles/devices'
+import Icon from './Icon'
+
 type buttonProps = {
   onClick: MouseEventHandler
   text: string
+  iconName: string
 }
 const ColumnWrapper = styled.div`
   flex-basis: 50%;
@@ -31,10 +34,11 @@ const CategoryButtonStyle = styled.button`
   min-height: 230px;
   cursor: pointer;
 `
-const CategoryButton = ({ onClick, text }: buttonProps) => {
+const CategoryButton = ({ onClick, text, iconName = 'Car' }: buttonProps) => {
   return (
     <ColumnWrapper>
       <CategoryButtonStyle type="button" onClick={onClick}>
+        <Icon iconName={iconName} />
         {text}
       </CategoryButtonStyle>
       <NotificationToolTip color="white" value={3} />

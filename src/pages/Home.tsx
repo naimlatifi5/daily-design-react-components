@@ -2,7 +2,10 @@ import React from 'react'
 import styled from 'styled-components'
 import { device } from '../styles/devices'
 import CategoryButton from '../components/common/CategoryButton'
-
+import Car from '../assets/Icons/Car.svg'
+import House from '../assets/Icons/House.svg'
+import Phone from '../assets/Icons/Phone.svg'
+import All from '../assets/Icons/All.svg'
 const CategoryWrapper = styled.div`
   padding: 12px;
   @media ${device.lg} {
@@ -23,10 +26,14 @@ export default function Home() {
   return (
     <div>
       <CategoryWrapper>
-        <CategoryButton text="Vehicles" onClick={handleClick} />
-        <CategoryButton text="Food" onClick={handleClick} />
-        <CategoryButton text="Food" onClick={handleClick} />
-        <CategoryButton text="Food" onClick={handleClick} />
+        <CategoryButton text="Vehicles" iconName={Car} onClick={handleClick} />
+        <CategoryButton text="House" iconName={House} onClick={handleClick} />
+        <CategoryButton
+          text="Accessories"
+          iconName={Phone}
+          onClick={handleClick}
+        />
+        <CategoryButton iconName={All} text="Food" onClick={handleClick} />
       </CategoryWrapper>
     </div>
   )
