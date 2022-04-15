@@ -6,14 +6,16 @@ import Close from '../../assets/Icons/Close.svg'
 
 const TagInput = styled.div`
   background-color: ${({ theme }) => theme.colors.white};
-  padding: 13px 15px 10px 15px;
+  padding: 18px;
   border-radius: 12px;
   display: flex;
   flex-wrap: wrap;
+  box-shadow: 5px 8px 22px 3px rgba(179, 179, 179, 0.54);
 `
 const Input = styled.input`
   flex: 1;
   border: none;
+  margin-left: 6px;
 `
 const Ul = styled.ul`
   display: flex;
@@ -22,17 +24,20 @@ const Ul = styled.ul`
 
   .tag {
     width: auto;
-    height: 32px;
     display: flex;
     align-items: center;
     justify-content: center;
-    color: ${({ theme }) => theme.colors.white};
-    padding: 24px;
     position: relative;
     list-style: none;
-    border-radius: 6px;
-    margin: 10px 6px 10px 0;
+    height: 40px;
+  }
+  .tag-wrapper {
+    color: ${({ theme }) => theme.colors.white};
     background: ${({ theme }) => theme.colors.grey};
+    height: 40px;
+    border-radius: 6px;
+    padding: 10px 24px;
+    margin: 2px 12px 2px 0;
   }
 `
 
@@ -40,10 +45,10 @@ const CloseIcon = styled.span`
   svg {
     width: 18px;
     height: 18px;
-    fill: ${({ theme }) => theme.colors.white};
+    fill: ${({ theme }) => theme.colors.greyLight};
     position: absolute;
-    right: -1px;
-    top: 0px;
+    right: 7px;
+    top: -4px;
   }
 `
 
@@ -73,10 +78,12 @@ const InputTags: React.FC<Tags> = ({ tags, icon }) => {
         {allTags.map((item, index) => {
           return (
             <li key={index} className="tag">
-              <span className="tag-title"> {item}</span>
-              <CloseIcon onClick={() => removeToggleData(index)}>
-                <Icon iconName={Close} />
-              </CloseIcon>
+              <div className="tag-wrapper">
+                <span className="tag-title"> {item}</span>
+                <CloseIcon onClick={() => removeToggleData(index)}>
+                  <Icon iconName={Close} />
+                </CloseIcon>
+              </div>
             </li>
           )
         })}

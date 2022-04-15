@@ -6,4 +6,5 @@ export const COLORS = {
   primary5: '#F4FBF9',
   black: '#000000',
   persianGreen: '#00B7A1',
+  greyLight: '#c9c2c2',
 }
