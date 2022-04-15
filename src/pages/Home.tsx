@@ -2,9 +2,10 @@ import React from 'react'
 import styled from 'styled-components'
 import { device } from '../styles/devices'
 import CategoryButton from '../components/common/CategoryButton'
-import Car from '../assets/Icons/Car.svg'
-import House from '../assets/Icons/House.svg'
-import Phone from '../assets/Icons/Phone.svg'
+// @ts-ignore
+import Car from '../assets/Icons/Car.svg' // @ts-ignore
+import House from '../assets/Icons/House.svg' // @ts-ignore
+import Phone from '../assets/Icons/Phone.svg' // @ts-ignore
 import All from '../assets/Icons/All.svg'
 const CategoryWrapper = styled.div`
   padding: 12px;

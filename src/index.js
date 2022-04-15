@@ -11,8 +11,10 @@ import { COLORS } from './styles/colors.ts'
 import NavBar from './components/common/NavBar'
 // pages
 import Home from './pages/Home.tsx'
-import About from './pages/About.tsx'
+import AddCategory from './pages/AddCategory.tsx'
 import Notfound from './pages/NotFound.tsx'
+import Components from './pages/Components.tsx'
+
 const theme = {
   colors: COLORS,
 }
@@ -29,7 +31,8 @@ ReactDOM.render(
           <main>
             <Routes>
               <Route path="/" element={<Home />} />
-              <Route path="/about" element={<About />} />
+              <Route path="/add-category" element={<AddCategory />} />
+              <Route path="/components" element={<Components />} />
               <Route element={Notfound} />
             </Routes>
           </main>

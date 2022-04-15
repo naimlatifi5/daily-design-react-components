@@ -34,8 +34,7 @@ interface INotificationToolTipProps
   extends INotificationToolTipRequiredProps,
     INotificationToolTipOptionalProps {}
 
-const NotificationToolTip = (props: INotificationToolTipProps) => {
-  const { value, color } = props
+const NotificationToolTip = ({ value, color }: INotificationToolTipProps) => {
   return <ToolTipContainer style={{ color }}>{value}</ToolTipContainer>
 }
 

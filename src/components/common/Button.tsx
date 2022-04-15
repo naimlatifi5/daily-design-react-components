@@ -1,11 +1,11 @@
-import React, { MouseEventHandler } from 'react'
+import React from 'react'
 
-type myProps = {
-  onClick: MouseEventHandler
+interface buttonProps {
+  onClick: () => void // nothing to return use void
   text?: string
 }
 
-const Button = ({ onClick, text }: myProps) => (
+const Button = ({ onClick, text }: buttonProps) => (
   <button onClick={onClick}>{text}</button>
 )
 export default Button

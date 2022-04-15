@@ -1,11 +1,11 @@
-import React, { MouseEventHandler } from 'react'
+import React from 'react'
 import NotificationToolTip from './NotificationToolTip'
 import styled from 'styled-components'
 import { device } from '../../styles/devices'
 import Icon from './Icon'
 
-type buttonProps = {
-  onClick: MouseEventHandler
+interface buttonProps {
+  onClick: () => void
   text: string
   iconName: string
 }
@@ -34,7 +34,11 @@ const CategoryButtonStyle = styled.button`
   min-height: 230px;
   cursor: pointer;
 `
-const CategoryButton = ({ onClick, text, iconName = 'Car' }: buttonProps) => {
+const CategoryButton: React.FC<buttonProps> = ({
+  onClick,
+  text,
+  iconName = 'Close',
+}) => {
   return (
     <ColumnWrapper>
       <CategoryButtonStyle type="button" onClick={onClick}>
