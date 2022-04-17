@@ -12,6 +12,6 @@
     }
   },
   "Tags": {
-    "string": ["nice", "hej"]
+    "allTags": { "string": ["nice", "hej"] }
   }
 }
