@@ -11,7 +11,7 @@
       "belongsTo": "Post"
     }
   },
-  "tags": {
+  "Tags": {
     "string": ["nice", "hej"]
   }
 }
