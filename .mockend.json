@@ -10,5 +10,8 @@
     "post": {
       "belongsTo": "Post"
     }
+  },
+  "Tags": {
+    "allTags": ["nice", "hej"]
   }
 }
