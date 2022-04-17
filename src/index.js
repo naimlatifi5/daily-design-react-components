@@ -2,6 +2,8 @@ import React from 'react'
 import ReactDOM from 'react-dom'
 
 import { BrowserRouter, Route, Routes } from 'react-router-dom'
+import styled from 'styled-components'
+
 // global styles
 import GlobalStyles from './styles/global.ts'
 import { ThemeProvider } from 'styled-components'
@@ -14,6 +16,12 @@ import Home from './pages/Home.tsx'
 import AddCategory from './pages/AddCategory.tsx'
 import Notfound from './pages/NotFound.tsx'
 import Components from './pages/Components.tsx'
+
+const Main = styled.main`
+  max-width: 1440px;
+  width: 100%;
+  margin: 0 auto;
+`
 
 const theme = {
   colors: COLORS,
@@ -28,14 +36,14 @@ ReactDOM.render(
           <header>
             <NavBar />
           </header>
-          <main>
+          <Main>
             <Routes>
               <Route path="/" element={<Home />} />
               <Route path="/add-category" element={<AddCategory />} />
               <Route path="/components" element={<Components />} />
               <Route element={Notfound} />
             </Routes>
-          </main>
+          </Main>
         </BrowserRouter>
       </div>
     </ThemeProvider>

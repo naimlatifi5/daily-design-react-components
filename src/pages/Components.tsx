@@ -10,6 +10,7 @@ const Components = () => {
       <h3>Input tags component</h3>
       <br />
       <InputTags tags={['hej', 'nice']} icon="Close" />
+      <h2>Form comments</h2>
     </>
   )
 }
