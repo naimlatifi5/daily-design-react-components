@@ -12,6 +12,6 @@
     }
   },
   "Tags": {
-    "allTags": ["nice", "hej"]
+    "allTags": { "tags": ["nice", "hej"] }
   }
 }
