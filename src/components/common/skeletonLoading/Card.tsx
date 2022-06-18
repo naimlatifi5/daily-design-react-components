@@ -1,4 +1,4 @@
-import React, {useContext} from "react"
+import React from "react"
 //import { ColorContext } from "../useContextAPI/ColorContext";
 import Skeleton from "./Skeleton";
 const Card = ( {title, body, isEmpty} ) => {

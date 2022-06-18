@@ -1,5 +1,5 @@
 
-import React, { useContext } from "react"
+import React from "react"
 //import { ColorContext } from "../context/ColorContext";
 const Skeleton = () => {
    // const colors = useContext(ColorContext)

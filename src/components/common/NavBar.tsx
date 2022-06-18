@@ -29,10 +29,13 @@ export default function NavBar() {
         <Link to="/add-category">Add category</Link>
       </li>
       <li>
-        <Link to="/components">React components</Link>
+        <Link to="/inputTagsComponent">Input Tags</Link>
       </li>
       <li>
         <Link to="/skeletonLoading">Skeleton Loading</Link>
+      </li>
+      <li>
+        <Link to="/commentForm">Comment form</Link>
       </li>
     </Navigation>
   )

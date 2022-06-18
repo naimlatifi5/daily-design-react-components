@@ -19,8 +19,9 @@ import NavBar from './components/common/NavBar'
 import Home from './pages/Home.tsx'
 import AddCategory from './pages/AddCategory.tsx'
 import Notfound from './pages/NotFound.tsx'
-import Components from './pages/Components.tsx'
+import InputTagsComponent from './pages/InputTagsComponent.tsx'
 import SkeletonLoading from './pages/SkeletonLoading.tsx'
+import CommentForm from './pages/CommentForm.tsx'
 
 const Main = styled.main`
   max-width: 1440px;
@@ -45,8 +46,9 @@ ReactDOM.render(
             <Routes>
               <Route path="/" element={<Home />} />
               <Route path="/add-category" element={<AddCategory />} />
-              <Route path="/components" element={<Components />} />
+              <Route path="/inputTagsComponent" element={<InputTagsComponent />} />
               <Route path="/skeletonLoading" element={<SkeletonLoading />} />
+              <Route path="/commentForm" element={<CommentForm />} />
               <Route element={Notfound} />
             </Routes>
           </Main>
