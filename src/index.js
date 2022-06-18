@@ -9,6 +9,10 @@ import GlobalStyles from './styles/global.ts'
 import { ThemeProvider } from 'styled-components'
 import { COLORS } from './styles/colors.ts'
 
+// css style 
+
+import "./styles/css/Card.css";
+
 // components
 import NavBar from './components/common/NavBar'
 // pages
@@ -16,6 +20,7 @@ import Home from './pages/Home.tsx'
 import AddCategory from './pages/AddCategory.tsx'
 import Notfound from './pages/NotFound.tsx'
 import Components from './pages/Components.tsx'
+import SkeletonLoading from './pages/SkeletonLoading.tsx'
 
 const Main = styled.main`
   max-width: 1440px;
@@ -41,6 +46,7 @@ ReactDOM.render(
               <Route path="/" element={<Home />} />
               <Route path="/add-category" element={<AddCategory />} />
               <Route path="/components" element={<Components />} />
+              <Route path="/skeletonLoading" element={<SkeletonLoading />} />
               <Route element={Notfound} />
             </Routes>
           </Main>

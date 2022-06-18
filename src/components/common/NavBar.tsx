@@ -31,6 +31,9 @@ export default function NavBar() {
       <li>
         <Link to="/components">React components</Link>
       </li>
+      <li>
+        <Link to="/skeletonLoading">Skeleton Loading</Link>
+      </li>
     </Navigation>
   )
 }

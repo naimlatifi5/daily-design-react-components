@@ -48,6 +48,7 @@
   },
   "devDependencies": {
     "@types/styled-components": "^5.1.24",
+    "axios": "^0.27.2",
     "react-svg": "^14.1.16"
   }
 }
